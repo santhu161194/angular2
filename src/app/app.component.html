@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+<!--For practice
+<div [hidden]="isUnchanged"  >Something</div>
+<button (click)="onChangeClick();onClickChange()" [style.color]="isUnchanged?'red':'green'" [class.special]="isUnchanged" [class.two]="isUnchanged">Hide</button>
+-->
+<h1>{{name}}</h1>
+<input [(ngModel)]="name"
+(ngModelChange)="setUppercasename($event)">
+<router-outlet></router-outlet>
+<app-messages></app-messages>
